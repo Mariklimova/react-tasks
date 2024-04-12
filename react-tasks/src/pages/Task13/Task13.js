@@ -1,0 +1,23 @@
+
+
+function Task13() {
+    const arr = ['vhbgujhu', 42, 'dfgguhkh', 105];
+    const color = ['cyan', 'magenta', 'yellow', 'green', 'purple', 'blue', 'orange']
+
+    const res = arr.map((el) => {
+        const randonColor = color[Math.floor(Math.random() * 7)];
+        return <p style={{ color: randonColor }}>
+            {el} - цвет {randonColor};
+        </p>
+    })
+
+    return <div>
+        <p>7. Создайте компонент, который принимает статичный массив элементов и
+            присваивает каждому элементу случайный цвет фона. Выведите элементы с их
+            цветами на странице.</p>
+
+        <div>{res}</div>
+    </div>
+}
+
+export default Task13

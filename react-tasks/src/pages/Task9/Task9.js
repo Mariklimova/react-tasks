@@ -1,17 +1,11 @@
-function Task7() {
-    const res = ['sdvsdv'].map((el) => {
-        return <div>
-            
-            <p>{el>0?`${el} положитеное`:`${el} отрицательное`}</p>
-
-        </div>
-    })
+function Task9() {
+    const res = ['sdvsdv', 'xffffyfxtfyuoippooo', 'hvhy', 'cgcgtccccghh'].filter((el) => el.length <= 10)
     return <div>
         <p>3. Создайте компонент, который принимает массив строк и фильтрует строки,
-оставляя только те, длина которых не превышает 10 символов.</p>
+            оставляя только те, длина которых не превышает 10 символов.</p>
 
         <div>{res}</div>
     </div>
 }
 
-export default Task7
+export default Task9

@@ -9,9 +9,14 @@ import Task7 from './pages/Task7/Task7';
 import Task8 from './pages/Task8/Task8';
 import Task9 from './pages/Task9/Task9';
 import Task10 from './pages/Task10/Task10';
+import Task11 from './pages/Task11/Task11';
+import Task12 from './pages/Task12/Task12';
+import Task13 from './pages/Task13/Task13';
+import Task14 from './pages/Task14/Task14';
 import Task15 from './pages/Task15/Task15';
 import Task16 from './pages/Task16/Task16';
 import Task17 from './pages/Task17/Task17';
+import Task18 from './pages/Task18/Task18';
 
 function App() {
   return (
@@ -27,9 +32,14 @@ function App() {
         <Route path='/task8' element={<Task8 />} />
         <Route path='/task9' element={<Task9 />} />
         <Route path='/task10' element={<Task10 />} />
+        <Route path='/task11' element={<Task11 />} />
+        <Route path='/task12' element={<Task12 />} />
+        <Route path='/task13' element={<Task13 />} />
+        <Route path='/task14' element={<Task14 />} />
         <Route path='/task15' element={<Task15 />} />
         <Route path='/task16' element={<Task16 />} />
         <Route path='/task17' element={<Task17 />} />
+        <Route path='/task18' element={<Task18 />} />
 
 
       </Routes>
