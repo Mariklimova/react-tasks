@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useState } from "react"
 
 function Task23() {
@@ -19,16 +20,19 @@ function Task23() {
 
     }
 
-
-
-    return <div>
+    return <>
         <p>3. Создайте компонент с полем ввода и кнопкой. По клику на кнопку собрать
             данные из input и проверить вводимую строку на почту. Результат отображать в
             консоль</p>
 
-        <input type="text" onChange={changeValue} />
-        <button onClick={checkEmail}>Click</button>
-    </div>
+        <div>
+            <input type="text" onChange={changeValue} />
+            <button onClick={checkEmail}>Click</button>
+
+        </div>
+
+        <Link to={'/'}>Вернуться на главную страницу</Link>
+    </>
 }
 
 export default Task23

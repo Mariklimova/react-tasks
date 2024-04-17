@@ -1,23 +1,26 @@
+import { Link } from 'react-router-dom'
 import { useState } from "react"
 
-function Task31() {
-    const [value, setValue] = useState('');
+function Task34() {
+  const [value, setValue] = useState('');
 
   function showValue(e) {
-    setValue(e.target.value)
+    setValue(e.target.value);
   }
 
 
 
-    return <div>
+  return <div>
 
-        <p>4. Выводите каждое введенное значение из поля ввода (input) в заголовке H1.</p>
+    <p>4. Выводите каждое введенное значение из поля ввода (input) в заголовке H1.</p>
 
-        <input type="text"  onChange = {showValue} />
+    <input type="text" onChange={showValue} />
 
-       <h1>{value}</h1>
+    <h1>{value}</h1>
 
-    </div>
+    <Link to={'/'}>Вернуться на главную страницу</Link>
+
+  </div>
 }
 
-export default Task31
+export default Task34

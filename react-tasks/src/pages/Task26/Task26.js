@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useState } from "react"
 
 function Task26() {
@@ -17,6 +18,7 @@ function Task26() {
 
         <h1>{flage ? 'text' : null}</h1>
 
+        <Link to={'/'}>Вернуться на главную страницу</Link>
     </div>
 }
 

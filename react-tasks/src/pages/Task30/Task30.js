@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useState } from "react"
 
 function Task30() {
@@ -7,7 +8,7 @@ function Task30() {
     });
 
     function setInpValue(e) {
-        setData({ ...data, [e.target.name]: e.target.value });
+        setData({ ...data, [e.target.id]: e.target.value });
 
     };
 
@@ -18,11 +19,15 @@ function Task30() {
         <p>10. По клику на кнопку собрать данные из двух input: name, surname. Работать с 1
             state, первоначальное значение которого name:'',surname:'' . Проверить
             значения 2 input на пустоту. Структура state:</p>
-
-        <input name="name" type="text" placeholder="name" onChange={setInpValue} />
-        <input name="surname" type="text" placeholder="surname" onChange={setInpValue} />
+<div>
+        <input id="name" type="text" placeholder="name" onChange={setInpValue} />
+        <input id="surname" type="text" placeholder="surname" onChange={setInpValue} />
 
         <button onClick={check}>Click</button>
+
+</div>
+
+        <Link to={'/'}>Вернуться на главную страницу</Link>
 
     </div>
 }

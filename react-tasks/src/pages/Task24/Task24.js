@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useState } from "react"
 
 function Task24() {
@@ -19,11 +20,15 @@ function Task24() {
             данные из двух input (2 разных state). Сравнить значения 2 input на равенство.
             Результат отображать в консоль
         </p>
+        <div>
+            <input type="text" onChange={fillInp1} />
+            <input type="text" onChange={fillInp2} />
 
-        <input type="text" onChange={fillInp1} />
-        <input type="text" onChange={fillInp2} />
-        
-        <button onClick={checkInp}>Click</button>
+            <button onClick={checkInp}>Click</button>
+
+        </div>
+
+        <Link to={'/'}>Вернуться на главную страницу</Link>
     </div>
 }
 

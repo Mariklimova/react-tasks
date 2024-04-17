@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useState } from "react"
 
 function Task25() {
@@ -12,16 +13,21 @@ function Task25() {
     }
 
 
-    return <div>
+    return <>
         <p>5. Создайте компонент с полем ввода имени и кнопкой "Привет". При вводе имени в
             поле и нажатии на кнопку, компонент должен отображать приветственное
             сообщение с именем, введенным пользователем
         </p>
 
-       
+        <div>
+            
+            <input type="text" placeholder = 'name' onChange={getInp}/>
+            <button onClick={giveInp}>Привет</button>
 
-        <button onClick={giveInp}>Привет</button>
-    </div>
+        </div>
+
+        <Link to={'/'}>Вернуться на главную страницу</Link>
+    </>
 }
 
 export default Task25

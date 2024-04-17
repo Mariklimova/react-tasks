@@ -1,10 +1,11 @@
+import {Link} from 'react-router-dom'
 import { useState } from "react"
 
-function Task31() {
+function Task33() {
     const [count, setCount] = useState(0);
 
     function sumCount() {
-        setCount(count + 1)
+        setCount(count + 1);
     }
 
 
@@ -16,7 +17,9 @@ function Task31() {
 
         <button onClick={sumCount}>Click</button>
         <h1>{count}</h1>
+
+        <Link to = {'/'}>Вернуться на главную страницу</Link>
     </div>
 }
 
-export default Task31
+export default Task33

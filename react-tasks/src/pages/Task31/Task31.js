@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useState } from "react"
 
 function Task31() {
@@ -9,17 +10,25 @@ function Task31() {
     function changeColor() {
 
         setFlag(flag ? false : true)
-        setColor(arrColor[Math.floor(Math.random() * arrColor.length)])
+        setColor(!flag ? arrColor[Math.floor(Math.random() * arrColor.length)] : 'black')
     }
 
     return <>
 
-        <p>1. Создайте кнопку с названием "Добавить цвет". При клике на эту кнопку цвет шрифта заголовка H1 должен измениться. При следующем клике цвет должен вернуться в первоначальное состояние. Текст кнопки также должен меняться с "Открыто" на "Закрыто" при нажатии на саму кнопку.</p>
+        <p>1. Создайте кнопку с названием "Добавить цвет".
+            При клике на эту кнопку цвет шрифта заголовка H1 должен измениться.
+            При следующем клике цвет должен вернуться в первоначальное состояние.
+            Текст кнопки также должен меняться с "Открыто" на "Закрыто" при нажатии на саму кнопку.</p>
 
-        <h1 style={{ color: color }}>TEXT</h1>
+        <div>
+            <h1 style={{ color: color }}>TEXT</h1>
 
-        <button onClick={changeColor}>{flag?'убрать цвет':'добавить цвет'}</button>
+            <button onClick={changeColor}>{flag ? 'убрать цвет' : 'добавить цвет'}</button>
 
+        </div>
+
+
+        <Link to={'/'}>Вернуться на главную страницу</Link>
     </>
 }
 

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useState } from "react"
 
 function Task28() {
@@ -23,6 +24,8 @@ function Task28() {
         <button onClick={addMinus}>-1</button>
 
         <h1>{num}</h1>
+
+        <Link to={'/'}>Вернуться на главную страницу</Link>
     </div>
 }
 

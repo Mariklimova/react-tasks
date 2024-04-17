@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useState } from "react"
 
 function Task22() {
@@ -18,9 +19,15 @@ function Task22() {
             данные из input и проверить вводимую строку на палиндром. Результат
             отображать в консоль
         </p>
+
+        <div>
         <input type="text" onChange={getInp} />
         
         <button onClick={checkPolindrom}>Click</button>
+
+        </div>
+
+        <Link to={'/'}>Вернуться на главную страницу</Link>
     </div>
 }
 
