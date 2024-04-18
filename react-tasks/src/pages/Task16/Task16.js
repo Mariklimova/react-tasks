@@ -1,3 +1,5 @@
+
+
 function Task16() {
     const inpValue = (event) => {
         console.log(event.target.value);

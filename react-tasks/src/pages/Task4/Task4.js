@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import img from './assets/landing.png'
 
 function Task4() {
@@ -9,6 +11,8 @@ function Task4() {
 
 
         {arr}
+
+        <Link to={'/'}>Вернуться на главную страницу</Link>
     </div>
 }
 

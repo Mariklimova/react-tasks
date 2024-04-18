@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 
 function Task2() {
     const arr = [1, 2, 3, 4].map((el) => <h1>{Math.sqrt(el)}</h1>)
@@ -6,6 +7,9 @@ function Task2() {
             отобразить на странице в виде h1</p>
 
         {arr}
+
+
+        <Link to={'/'}>Вернуться на главную страницу</Link>
     </div>
 }
 

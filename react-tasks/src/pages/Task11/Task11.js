@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import img1 from './assets/syrniki.webp'
 import img2 from './assets/solyanka.webp'
 import img3 from './assets/golubcy.webp'
@@ -34,6 +36,8 @@ function Task11() {
             Добавьте немного стилей</p>
 
         <div>{res}</div>
+
+        <Link to={'/'}>Вернуться на главную страницу</Link>
     </div>
 }
 

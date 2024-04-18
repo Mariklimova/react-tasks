@@ -1,11 +1,11 @@
-
+import { Link } from 'react-router-dom'
 
 function Task13() {
     const arr = ['vhbgujhu', 42, 'dfgguhkh', 105];
     const color = ['cyan', 'magenta', 'yellow', 'green', 'purple', 'blue', 'orange']
 
     const res = arr.map((el) => {
-        const randonColor = color[Math.floor(Math.random() * 7)];
+        const randonColor = color[Math.floor(Math.random() * color.length)];
         return <p style={{ color: randonColor }}>
             {el} - цвет {randonColor};
         </p>
@@ -17,6 +17,9 @@ function Task13() {
             цветами на странице.</p>
 
         <div>{res}</div>
+
+        
+        <Link to={'/'}>Вернуться на главную страницу</Link>
     </div>
 }
 
