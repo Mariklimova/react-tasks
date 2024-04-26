@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom'
 import { useState, useEffect } from "react"
 
 function Task38() {
@@ -17,7 +17,7 @@ function Task38() {
     return <div>
 
         <h1>{ip.ip}</h1>
-
+        <Link to={'/'}>Вернуться на главную страницу</Link>
     </div>
 }
 
