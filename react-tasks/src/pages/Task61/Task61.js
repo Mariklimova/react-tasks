@@ -1,14 +1,15 @@
 import { Link } from 'react-router-dom'
-import { useEffect, useState } from "react"
+import { useEffect} from "react"
 import axios from 'axios'
 
 function Task47() {
 
-    // const randomId = Math.floor(Math.random() * 200)
     
     async function getResult() {
-        const response = await axios.get('http://numbersapi.com/10');
-        // console.log(response.data.fragment);
+        // const randomId = Math.floor(Math.random() * 9000)
+        // console.log(randomId);
+        const response = await axios.get(`http://numbersapi.com/${Math.floor(Math.random() * 9000)}`);
+        console.log(response.data);
     }
 
 

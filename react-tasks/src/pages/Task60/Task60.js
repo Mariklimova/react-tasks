@@ -24,7 +24,7 @@ function Task47() {
             <h1>
                 {+time.getHours() < 10 ? `0${time.getHours()}` : time.getHours()} :
                 {+time.getMinutes() < 10 ? `0${time.getMinutes()}` : time.getMinutes()} :
-                {+time.getHours() < 10 ? `0${time.getSeconds()}` : time.getSeconds()}
+                {+time.getSeconds() < 10 ? `0${time.getSeconds()}` : time.getSeconds()}
 
             </h1>
 
