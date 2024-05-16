@@ -6,8 +6,7 @@ function Task47() {
 
     
     async function getResult() {
-        // const randomId = Math.floor(Math.random() * 9000)
-        // console.log(randomId);
+    
         const response = await axios.get(`http://numbersapi.com/${Math.floor(Math.random() * 9000)}`);
         console.log(response.data);
     }

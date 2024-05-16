@@ -20,7 +20,7 @@ function Task47() {
             элемента.)</p>
 
         <div>
-            <button >Click</button>
+            <button onMouseLeave={{}}>Click</button>
 
         </div >
 
