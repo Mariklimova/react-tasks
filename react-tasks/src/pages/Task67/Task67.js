@@ -5,11 +5,7 @@ import { useRef } from "react"
 function Task47() {
 
 
-    const btn = useRef()
-
-    
-
-
+    const p = useRef()
 
     return <>
 
@@ -20,7 +16,10 @@ function Task47() {
             элемента.)</p>
 
         <div>
-            <button onMouseLeave={{}}>Click</button>
+            <button onMouseEnter={() => p.current.style.display = 'block'} onMouseLeave={() => p.current.style.display = 'none'}>SHOW</button>
+          
+
+            <p ref = {p}>tooltips</p>
 
         </div >
 
