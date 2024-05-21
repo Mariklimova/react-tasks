@@ -1,5 +1,26 @@
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home/Home'
+
+import { task78Context } from './Context/index'
+
+import Task101 from './CP/Task101/Task101';
+import Task102 from './CP/Task102/Task102';
+import Task103 from './CP/Task103/Task103';
+import Task104 from './CP/Task104/Task104';
+import Task105 from './CP/Task105/Task105';
+import Task106 from './CP/Task106/Task106';
+import Task107 from './CP/Task107/Task107';
+import Task108 from './CP/Task108/Task108';
+import Task109 from './CP/Task109/Task109';
+import Task110 from './CP/Task110/Task110';
+import Task112 from './CP/Task112/Task112';
+import Task113 from './CP/Task113/Task113';
+import Task114 from './CP/Task114/Task114';
+import Task115 from './CP/Task115/Task115';
+import Task116 from './CP/Task116/Task116';
+import Task117 from './CP/Task117/Task117';
+import Task118 from './CP/Task118/Task118';
+import Task119 from './CP/Task119/Task119';
 import Task1 from './pages/Task1/Task1';
 import Task2 from './pages/Task2/Task2';
 import Task3 from './pages/Task3/Task3';
@@ -72,13 +93,37 @@ import Task69 from './pages/Task69/Task69';
 import Task70 from './pages/Task70/Task70';
 import Task71 from './pages/Task71/Task71';
 import Task72 from './pages/Task72/Task72';
+import Task73 from './pages/Task73/Task73';
+import Task74 from './pages/Task74/Task74';
+import Task75 from './pages/Task75/Task75';
+import Task76 from './pages/Task76/Task76';
+import Task77 from './pages/Task77/Task77';
+import Task78 from './pages/Task78/Task78';
 
 
 function App() {
   return (
     <div >
       <Routes>
-        <Route path='/' element={<Home/>}></Route>
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/task101' element={<Task101 />} />
+        <Route path='/task102' element={<Task102 />} />
+        <Route path='/task103' element={<Task103 />} />
+        <Route path='/task104' element={<Task104 />} />
+        <Route path='/task105' element={<Task105 />} />
+        <Route path='/task106' element={<Task106 />} />
+        <Route path='/task107' element={<Task107 />} />
+        <Route path='/task108' element={<Task108 />} />
+        <Route path='/task109' element={<Task109 />} />
+        <Route path='/task110' element={<Task110 />} />
+        <Route path='/task112' element={<Task112 />} />
+        <Route path='/task113' element={<Task113 />} />
+        <Route path='/task114' element={<Task114 />} />
+        <Route path='/task115' element={<Task115 />} />
+        <Route path='/task116' element={<Task116 />} />
+        <Route path='/task117' element={<Task117 />} />
+        <Route path='/task118' element={<Task118 />} />
+        <Route path='/task119' element={<Task119 />} />
         <Route path='/task1' element={<Task1 />} />
         <Route path='/task2' element={<Task2 />} />
         <Route path='/task3' element={<Task3 />} />
@@ -151,10 +196,22 @@ function App() {
         <Route path='/task70' element={<Task70 />} />
         <Route path='/task71' element={<Task71 />} />
         <Route path='/task72' element={<Task72 />} />
-               
+        <Route path='/task73' element={<Task73 />} />
+        <Route path='/task74' element={<Task74 />} />
+        <Route path='/task75' element={<Task75 />} />
+        <Route path='/task76' element={<Task76 />} />
+        <Route path='/task77' element={<Task77 />} />
+
 
 
       </Routes>
+
+      <task78Context.Provider value={{ id: 1, name: 'Marina', surname: 'Klimova' }}>
+        <Routes>
+          <Route path='/task78' element={<Task78 />} />
+        </Routes>
+
+      </task78Context.Provider>
     </div>
   );
 }

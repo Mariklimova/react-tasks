@@ -5,9 +5,9 @@ function Task13() {
     const color = ['cyan', 'magenta', 'yellow', 'green', 'purple', 'blue', 'orange']
 
     const res = arr.map((el) => {
-        const randonColor = color[Math.floor(Math.random() * color.length)];
-        return <p style={{ color: randonColor }}>
-            {el} - цвет {randonColor};
+        const randomColor = color[Math.floor(Math.random() * color.length)];
+        return <p style={{ color: randomColor }}>
+            {el} - цвет {randomColor};
         </p>
     })
 
