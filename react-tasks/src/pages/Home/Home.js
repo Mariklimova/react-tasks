@@ -83,6 +83,14 @@ function Home() {
         <p><Link to={'/task76'}>Перейти к задаче 76</Link></p>
         <p><Link to={'/task77'}>Перейти к задаче 77</Link></p>
         <p><Link to={'/task78'}>Перейти к задаче 78</Link></p>
+        <p><Link to={'/task79'}>Перейти к задаче 79</Link></p>
+        <p><Link to={'/task80'}>Перейти к задаче 80</Link></p>
+        <p><Link to={'/task81'}>Перейти к задаче 81</Link></p>
+        <p><Link to={'/task82'}>Перейти к задаче 82</Link></p>
+        <p><Link to={'/task83'}>Перейти к задаче 83</Link></p>
+        <p><Link to={'/task84'}>Перейти к задаче 84</Link></p>
+        <p><Link to={'/task85'}>Перейти к задаче 85</Link></p>
+        <p><Link to={'/task86'}>Перейти к задаче 86</Link></p>
 
     </>
 }

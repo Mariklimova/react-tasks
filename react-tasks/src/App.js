@@ -26,6 +26,8 @@ import Task121 from './CP/Task121/Task121';
 import Task122 from './CP/Task122/Task122';
 import Task123 from './CP/Task123/Task123';
 import Task124 from './CP/Task124/Task124';
+import Task125 from './CP/Task125/Task125';
+import Task126 from './CP/Task126/Task126';
 import Task1 from './pages/Task1/Task1';
 import Task2 from './pages/Task2/Task2';
 import Task3 from './pages/Task3/Task3';
@@ -104,6 +106,11 @@ import Task75 from './pages/Task75/Task75';
 import Task76 from './pages/Task76/Task76';
 import Task77 from './pages/Task77/Task77';
 import Task78 from './pages/Task78/Task78';
+import Task79 from './pages/Task79/Task79';
+import Task82 from './pages/Task82/Task82';
+import Task83 from './pages/Task83/Task83';
+import Task84 from './pages/Task84/Task84';
+
 
 
 function App() {
@@ -134,6 +141,8 @@ function App() {
         <Route path='/task122' element={<Task122 />} />
         <Route path='/task123' element={<Task123 />} />
         <Route path='/task124' element={<Task124 />} />
+        <Route path='/task125' element={<Task125 />} />
+        <Route path='/task126' element={<Task126 />} />
         <Route path='/task1' element={<Task1 />} />
         <Route path='/task2' element={<Task2 />} />
         <Route path='/task3' element={<Task3 />} />
@@ -211,8 +220,9 @@ function App() {
         <Route path='/task75' element={<Task75 />} />
         <Route path='/task76' element={<Task76 />} />
         <Route path='/task77' element={<Task77 />} />
-
-
+        <Route path='/task82' element={<Task82 />} />
+        <Route path='/task83' element={<Task83 />} />
+        <Route path='/task84' element={<Task84 />} />
 
       </Routes>
 
@@ -222,6 +232,13 @@ function App() {
         </Routes>
 
       </task78Context.Provider>
+
+      {/* <task79Context.Provider value={{ ru: 'Привет', en: 'Hello', bel: 'Прывiтанне' }}>
+        <Routes>
+          <Route path='/task79' element={<Task79 />} />
+        </Routes>
+
+      </task79Context.Provider> */}
     </div>
   );
 }
