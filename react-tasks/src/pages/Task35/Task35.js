@@ -2,11 +2,11 @@ import { Link } from 'react-router-dom';
 import { useState } from "react"
 
 function Task35() {
-    const [text, setText1] = useState({ name: '', surname: '', age: '' });
+    const [text, setText] = useState({ name: '', surname: '', age: '' });
 
 
     function showInputs(e) {
-        setText1({ ...text, [e.target.id]: e.target.value });
+        setText({ ...text, [e.target.id]: e.target.value });
 
     }
 
