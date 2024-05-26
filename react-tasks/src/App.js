@@ -42,6 +42,16 @@ import Task137 from './CP/Task137/Task137';
 import Task138 from './CP/Task138/Task138';
 import Task139 from './CP/Task139/Task139';
 import Task140 from './CP/Task140/Task140';
+import Task141 from './CP/Task141/Task141';
+import Task142 from './CP/Task142/Task142';
+import Task143 from './CP/Task143/Task143';
+import Task144 from './CP/Task144/Task144';
+import Task145 from './CP/Task145/Task145';
+import Task146 from './CP/Task146/Task146';
+import Task147 from './CP/Task147/Task147';
+import Task148 from './CP/Task148/Task148';
+import Task149 from './CP/Task149/Task149';
+import Task150 from './CP/Task150/Task150';
 import Task1 from './pages/Task1/Task1';
 import Task2 from './pages/Task2/Task2';
 import Task3 from './pages/Task3/Task3';
@@ -173,6 +183,16 @@ function App() {
         <Route path='/task138' element={<Task138 />} />
         <Route path='/task139' element={<Task139 />} />
         <Route path='/task140' element={<Task140 />} />
+        <Route path='/task141' element={<Task141 />} />
+        <Route path='/task142' element={<Task142 />} />
+        <Route path='/task143' element={<Task143 />} />
+        <Route path='/task144' element={<Task144 />} />
+        <Route path='/task145' element={<Task145 />} />
+        <Route path='/task146' element={<Task146 />} />
+        <Route path='/task147' element={<Task147 />} />
+        <Route path='/task148' element={<Task148 />} />
+        <Route path='/task149' element={<Task149 />} />
+        <Route path='/task150' element={<Task150 />} />
         <Route path='/task1' element={<Task1 />} />
         <Route path='/task2' element={<Task2 />} />
         <Route path='/task3' element={<Task3 />} />
