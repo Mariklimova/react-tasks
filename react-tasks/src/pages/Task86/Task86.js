@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { useCallback, useMemo, useState, useContext, useReducer } from "react"
 import { task78Context } from '../../Context'
 
-function reducer(state, data) {
+function reducer(_state, data) {
     switch (data.type) {
         case 'value':
             return data.value

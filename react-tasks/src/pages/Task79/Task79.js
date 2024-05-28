@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { useCallback, useMemo, useState, useContext } from "react"
+import { useState, useContext } from "react"
 import { task79Context } from '../../Context'
 
 
@@ -19,9 +19,9 @@ function Task47() {
 
         <div>
             <h1>{data}</h1>
-            <button onClick={(e)=>setData(task79Context(e.target.textContent))}>ru</button>
-            <button>en</button>
-            <button>bel</button>
+            <button onClick={(e)=>setData(userInfo[e.target.textContent])}>ru</button>
+            <button onClick={(e)=>setData(userInfo[e.target.textContent])}>en</button>
+            <button onClick={(e)=>setData(userInfo[e.target.textContent])}>bel</button>
 
         </div >
 

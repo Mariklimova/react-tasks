@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home/Home'
 
-import { task78Context } from './Context/index'
+import { task78Context,task79Context,task94Context } from './Context/index'
 
 import Task101 from './CP/Task101/Task101';
 import Task102 from './CP/Task102/Task102';
@@ -55,6 +55,7 @@ import Task150 from './CP/Task150/Task150';
 import Task151 from './CP/Task151/Task151';
 import Task152 from './CP/Task152/Task152';
 import Task153 from './CP/Task153/Task153';
+import Task154 from './CP/Task154/Task154';
 import Task1 from './pages/Task1/Task1';
 import Task2 from './pages/Task2/Task2';
 import Task3 from './pages/Task3/Task3';
@@ -142,6 +143,12 @@ import Task86 from './pages/Task86/Task86';
 import Task87 from './pages/Task87/Task87';
 import Task88 from './pages/Task88/Task88';
 import Task89 from './pages/Task89/Task89';
+import Task90 from './pages/Task90/Task90';
+import Task91 from './pages/Task91/Task91';
+import Task92 from './pages/Task92/Task92';
+import Task93 from './pages/Task93/Task93';
+import Task94 from './pages/Task94/Task94';
+import Task95 from './pages/Task95/Task95';
 
 
 
@@ -202,6 +209,7 @@ function App() {
         <Route path='/task151' element={<Task151 />} />
         <Route path='/task152' element={<Task152 />} />
         <Route path='/task153' element={<Task153 />} />
+        <Route path='/task154' element={<Task154 />} />
         <Route path='/task1' element={<Task1 />} />
         <Route path='/task2' element={<Task2 />} />
         <Route path='/task3' element={<Task3 />} />
@@ -287,6 +295,11 @@ function App() {
         <Route path='/task87' element={<Task87 />} />
         <Route path='/task88' element={<Task88 />} />
         <Route path='/task89' element={<Task89 />} />
+        <Route path='/task90' element={<Task90 />} />
+        <Route path='/task91' element={<Task91 />} />
+        <Route path='/task92' element={<Task92 />} />
+        <Route path='/task93' element={<Task93 />} />
+        <Route path='/task95' element={<Task95 />} />
 
       </Routes>
 
@@ -297,12 +310,19 @@ function App() {
 
       </task78Context.Provider>
 
-      {/* <task79Context.Provider value={{ ru: 'Привет', en: 'Hello', bel: 'Прывiтанне' }}>
+      <task79Context.Provider value={{ ru: 'Привет', en: 'Hello', bel: 'Прывiтанне' }}>
         <Routes>
           <Route path='/task79' element={<Task79 />} />
         </Routes>
 
-      </task79Context.Provider> */}
+      </task79Context.Provider>
+
+      <task94Context.Provider value={{ press: 'Ofsset', красочность: '1+1', переплет: '1' }}>
+        <Routes>
+          <Route path='/task94' element={<Task94 />} />
+        </Routes>
+
+      </task94Context.Provider>
     </div>
   );
 }
