@@ -1,15 +1,12 @@
 import { Link } from 'react-router-dom'
-import { useCallback, useMemo, useState, useContext } from "react"
-import { task78Context } from '../../Context'
+import { useContext, useState } from "react"
+import { task81Context } from '../../Context'
 
 
 
 function Task47() {
-
-
-
-
-
+    const [black, white] = useContext(task81Context);
+    const [flag, setFlag] = useState(false)
 
     return <>
 
@@ -18,9 +15,9 @@ function Task47() {
             (светлая или темная). В компоненте отобразите интерфейс, который позволяет
             пользователю переключаться между темами.</p>
 
-        <div>
-
-
+        <div style={flag ? black : white}>
+            <h1>TEXT</h1>
+            <button style={!flag ? black : white} onClick={() => setFlag(!flag)}>{!flag ? 'BLACK' : 'WHITE'}</button>
 
 
         </div >

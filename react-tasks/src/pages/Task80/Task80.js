@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
-import { useCallback, useMemo, useState, useContext } from "react"
-import { task78Context } from '../../Context'
+import { useContext } from "react"
+import { task80Context } from '../../Context'
 
 
 
 function Task47() {
-
+const info = useContext(task80Context)
 
 
 
@@ -18,9 +18,10 @@ function Task47() {
             скорость ветра и т. д.). В компоненте отобразите эту информацию о погоде.</p>
 
         <div>
-
-
-
+            <h1>Температура: {info.temperature}</h1>
+            <h1>Влажность: {info.humidity}</h1>
+            <h1>Скорость ветра: {info.windSpeed}</h1>
+           
 
         </div >
 

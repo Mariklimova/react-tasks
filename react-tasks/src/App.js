@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home/Home'
 
-import { task78Context,task79Context,task94Context } from './Context/index'
+import { task78Context,task79Context,task94Context,task80Context,task81Context } from './Context/index'
 
 import Task101 from './CP/Task101/Task101';
 import Task102 from './CP/Task102/Task102';
@@ -135,6 +135,8 @@ import Task76 from './pages/Task76/Task76';
 import Task77 from './pages/Task77/Task77';
 import Task78 from './pages/Task78/Task78';
 import Task79 from './pages/Task79/Task79';
+import Task80 from './pages/Task80/Task80';
+import Task81 from './pages/Task81/Task81';
 import Task82 from './pages/Task82/Task82';
 import Task83 from './pages/Task83/Task83';
 import Task84 from './pages/Task84/Task84';
@@ -323,6 +325,20 @@ function App() {
         </Routes>
 
       </task94Context.Provider>
+
+      <task80Context.Provider value={{ temperature: '+25 C', humidity: '20%', windSpeed: '2m/s' }}>
+        <Routes>
+          <Route path='/task80' element={<Task80 />} />
+        </Routes>
+
+      </task80Context.Provider>
+    
+      <task81Context.Provider value={[{ color: "white", backgroundColor: "black" },{ color: "black", backgroundColor: "white" }]}>
+        <Routes>
+          <Route path='/task81' element={<Task81 />} />
+        </Routes>
+
+      </task81Context.Provider>
     </div>
   );
 }
